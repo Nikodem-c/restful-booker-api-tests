@@ -1,0 +1,140 @@
+{
+  "info": {
+    "_postman_id": "fcaf1d21-2d50-4990-8f71-45c90642aa75",
+    "name": "Restful Booker API Testing",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "59142936",
+    "_collection_link": "https://go.postman.co/collection/59142936-fcaf1d21-2d50-4990-8f71-45c90642aa75?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET - Booking",
+      "item": [
+        {
+          "name": "GET - All IDs",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "GET - ID",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "POST - Booking",
+      "item": [
+        {
+          "name": "POST - New entry",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"firstname\": \"Ellen\",\r\n    \"lastname\": \"Joe\",\r\n    \"totalprice\": 100,\r\n    \"depositpaid\": true,\r\n    \"bookingdates\": {\r\n        \"checkin\": \"2020-01-01\",\r\n        \"checkout\": \"2020-02-02\"\r\n    },\r\n    \"additionalneeds\": \"cola\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/booking",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "booking"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "POST - Auth token",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PUT - Booking",
+      "item": [
+        {
+          "name": "PUT - Update booking",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "PATCH - Booking",
+      "item": [
+        {
+          "name": "PATCH - Firstname & Lastname",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "DELETE - Booking",
+      "item": [
+        {
+          "name": "DELETE - Remove POST",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_password_1abp",
+      "value": ""
+    }
+  ]
+}
